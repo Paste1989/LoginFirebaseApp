@@ -8,6 +8,6 @@
 import Foundation
 
 class LoginViewModel {
-    var onLogin: (() -> Void)?
+    var onLogin: ((User) -> Void)?
     var onSignUp: (() -> Void)?
 }

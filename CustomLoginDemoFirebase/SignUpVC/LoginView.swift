@@ -15,7 +15,7 @@ class LoginView: UIView {
     private lazy var loginButton = UIButton(type: .system)
     private lazy var signUpButton = UIButton(type: .system)
     
-    var onLoginTapped: (() -> Void)?
+    var onLoginTapped: ((User) -> Void)?
     var onSignUpTapped: (() -> Void)?
     
     override init(frame: CGRect) {
@@ -39,20 +39,20 @@ class LoginView: UIView {
         stackView.layer.cornerRadius = 25.0
         self.addSubview(stackView)
         
-        Utilities.styleTextField(emailTextField)
+        emailTextField.styleTextField()
         emailTextField.placeholder = "email"
         stackView.addSubview(emailTextField)
         
-        Utilities.styleTextField(passwodTextField)
+        passwodTextField.styleTextField()
         passwodTextField.placeholder = "password"
         stackView.addSubview(passwodTextField)
         
-        Utilities.styleFilledButton(loginButton)
+        loginButton.styleFilledButton()
         loginButton.setTitle("Login", for: .normal)
         loginButton.addTarget(self, action: #selector(loginTapped), for: .touchUpInside)
         stackView.addSubview(loginButton)
         
-        Utilities.styleHollowButton(signUpButton)
+        signUpButton.styleHollowButton()
         signUpButton.setTitle("Sign Up", for: .normal)
         signUpButton.addTarget(self, action: #selector(signUpTapped), for: .touchUpInside)
         self.addSubview(signUpButton)
@@ -94,7 +94,8 @@ class LoginView: UIView {
     }
     
     @objc func loginTapped() {
-        onLoginTapped?()
+        let currentUser = User(firstName: "", lastName: "", email: "", password: "")
+        onLoginTapped?(currentUser)
     }
     
     @objc func signUpTapped() {

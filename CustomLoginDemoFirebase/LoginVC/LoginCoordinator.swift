@@ -11,7 +11,7 @@ import UIKit
 class LoginCoordinator: Coordinator {
     let navigationController = UINavigationController()
     
-    var onLoggedIn: (() -> Void)?
+    var onLoggedIn: ((User) -> Void)?
     
     func start() -> UIViewController {
         let vc = createLoginVC()
@@ -25,17 +25,17 @@ class LoginCoordinator: Coordinator {
         let vc = LoginViewController()
         vc.viewModel = LoginViewModel()
         
-        vc.viewModel.onLogin = { [weak self] in
-            self?.onLoggedIn?()
+        vc.viewModel.onLogin = { [weak self] currentUser in
+            self?.onLoggedIn?(currentUser)
         }
         
         vc.viewModel.onSignUp = { [weak self] in
             let vc = SignUpViewController()
-            vc.viewModel = SignUpViewModel()
+            vc.viewModel = SignUpViewModel(firebaseService: ServiceFactory.firebaseService)
             self?.navigationController.pushViewController(vc, animated: true)
             
-            vc.viewModel.onRegister = {
-                self?.navigationController.popViewController(animated: true)
+            vc.viewModel.onUserCreated = { [weak self] currentUser in
+                self?.onLoggedIn?(currentUser)
             }
         }
         

@@ -33,7 +33,7 @@ class HomeView: UIView {
         messageLabel.textColor = .black
         self.addSubview(messageLabel)
         
-        Utilities.styleFilledButton(logoutButton)
+        logoutButton.styleFilledButton()
         logoutButton.setTitle("Log Out", for: .normal)
         logoutButton.addTarget(self, action: #selector(logoutTapped), for: .touchUpInside)
         self.addSubview(logoutButton)

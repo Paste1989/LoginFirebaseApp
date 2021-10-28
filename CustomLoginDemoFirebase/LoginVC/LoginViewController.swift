@@ -23,8 +23,8 @@ class LoginViewController: UIViewController {
     }
     
     private func addCallbacks() {
-        loginView.onLoginTapped = { [weak self] in
-            self?.viewModel.onLogin?()
+        loginView.onLoginTapped = { [weak self] currentUser in
+            self?.viewModel.onLogin?(currentUser)
             
         }
         

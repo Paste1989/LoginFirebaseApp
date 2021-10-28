@@ -16,7 +16,7 @@ class SignUpView: UIView {
     private lazy var passwodTextField = UITextField()
     private lazy var registerButton = UIButton(type: .system)
     
-    var onRegisterTapped: (() -> Void)?
+    var onRegisterTapped: ((String, String, String, String) -> Void)?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -39,23 +39,23 @@ class SignUpView: UIView {
         stackView.layer.cornerRadius = 25.0
         self.addSubview(stackView)
         
-        Utilities.styleTextField(firstNameTextfield)
+        firstNameTextfield.styleTextField()
         firstNameTextfield.placeholder = "first name"
         stackView.addSubview(firstNameTextfield)
         
-        Utilities.styleTextField(lastNameTextField)
+        lastNameTextField.styleTextField()
         lastNameTextField.placeholder = "last name"
         stackView.addSubview(lastNameTextField)
         
-        Utilities.styleTextField(emailTextField)
+        emailTextField.styleTextField()
         emailTextField.placeholder = "email"
         stackView.addSubview(emailTextField)
         
-        Utilities.styleTextField(passwodTextField)
+        passwodTextField.styleTextField()
         passwodTextField.placeholder = "password"
         stackView.addSubview(passwodTextField)
         
-        Utilities.styleFilledButton(registerButton)
+        registerButton.styleFilledButton()
         registerButton.setTitle("Register", for: .normal)
         registerButton.addTarget(self, action: #selector(registerTapped), for: .touchUpInside)
         self.addSubview(registerButton)
@@ -103,6 +103,8 @@ class SignUpView: UIView {
     }
     
     @objc func registerTapped() {
-        onRegisterTapped?()
+        if let firstName = firstNameTextfield.text, let lastName = lastNameTextField.text, let email = emailTextField.text, let password = passwodTextField.text {
+            onRegisterTapped?(firstName, lastName, email, password)
+        }
     }
 }

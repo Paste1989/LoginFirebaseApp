@@ -10,6 +10,10 @@ import UIKit
 
 class HomeCoordinator: Coordinator {
     let navigationController = UINavigationController()
+    let user: User?
+    init(user: User) {
+        self.user = user
+    }
     
     var onLogoutSuccess: (() -> Void)?
     
@@ -21,9 +25,9 @@ class HomeCoordinator: Coordinator {
     }
     
     private func createHomeVC() -> UIViewController {
-        let vc = HomeViewController()
+        let vc = HomeViewController(user: user ?? User(firstName: "", lastName: "", email: "", password: ""))
         vc.viewModel = HomeViewModel()
-        
+    
         vc.viewModel.onLogout = { [weak self] in
             self?.onLogoutSuccess?()
         }

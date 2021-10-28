@@ -11,7 +11,7 @@ import UIKit
 class SignUpCoordinator: Coordinator {
     let navigationController = UINavigationController()
     
-    var onRegister: (() -> Void)?
+    var onUserCreated: ((User) -> Void)?
     
     func start() -> UIViewController {
         let vc = createSignUpVC()
@@ -22,10 +22,10 @@ class SignUpCoordinator: Coordinator {
     
     private func createSignUpVC() -> UIViewController {
         let vc = SignUpViewController()
-        vc.viewModel = SignUpViewModel()
+        vc.viewModel = SignUpViewModel(firebaseService: ServiceFactory.firebaseService)
         
-        vc.viewModel.onRegister = { [weak self] in
-            self?.onRegister?()
+        vc.viewModel.onUserCreated = { [weak self] currentUser in
+            self?.onUserCreated?(currentUser)
         }
         
         return vc

@@ -16,7 +16,7 @@
 		B74DF86D272981FE00C21134 /* CustomLoginDemoFirebaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74DF86C272981FE00C21134 /* CustomLoginDemoFirebaseTests.swift */; };
 		B74DF877272981FF00C21134 /* CustomLoginDemoFirebaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74DF876272981FF00C21134 /* CustomLoginDemoFirebaseUITests.swift */; };
 		B74DF879272981FF00C21134 /* CustomLoginDemoFirebaseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74DF878272981FF00C21134 /* CustomLoginDemoFirebaseUITestsLaunchTests.swift */; };
-		B74DF887272A757E00C21134 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74DF886272A757E00C21134 /* Utilities.swift */; };
+		B74DF887272A757E00C21134 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74DF886272A757E00C21134 /* Extensions.swift */; };
 		B74DF889272A871B00C21134 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74DF888272A871B00C21134 /* LoginViewController.swift */; };
 		B74DF88C272A881E00C21134 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74DF88B272A881E00C21134 /* HomeCoordinator.swift */; };
 		B74DF88E272A882A00C21134 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74DF88D272A882A00C21134 /* HomeViewModel.swift */; };
@@ -45,6 +45,9 @@
 		B74DF8BD272AAFE800C21134 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = B74DF8BC272AAFE800C21134 /* FirebaseRemoteConfig */; };
 		B74DF8BF272AAFE800C21134 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = B74DF8BE272AAFE800C21134 /* FirebaseStorage */; };
 		B74DF8C1272AAFE800C21134 /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = B74DF8C0272AAFE800C21134 /* FirebaseStorageSwift-Beta */; };
+		B74DF8C4272ABC7600C21134 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74DF8C3272ABC7600C21134 /* FirebaseService.swift */; };
+		B74DF8C6272AD35F00C21134 /* ServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74DF8C5272AD35F00C21134 /* ServiceFactory.swift */; };
+		B74DF8C8272AD8FC00C21134 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74DF8C7272AD8FC00C21134 /* User.swift */; };
 		B7CC0A0C2729830A00598162 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CC0A0B2729830A00598162 /* Coordinator.swift */; };
 		B7CC0A0F2729837F00598162 /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CC0A0E2729837F00598162 /* RootCoordinator.swift */; };
 		B7CC0A132729877500598162 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CC0A122729877500598162 /* LoginCoordinator.swift */; };
@@ -87,13 +90,16 @@
 		B74DF872272981FF00C21134 /* CustomLoginDemoFirebaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomLoginDemoFirebaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B74DF876272981FF00C21134 /* CustomLoginDemoFirebaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoginDemoFirebaseUITests.swift; sourceTree = "<group>"; };
 		B74DF878272981FF00C21134 /* CustomLoginDemoFirebaseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoginDemoFirebaseUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		B74DF886272A757E00C21134 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		B74DF886272A757E00C21134 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		B74DF888272A871B00C21134 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B74DF88B272A881E00C21134 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		B74DF88D272A882A00C21134 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		B74DF88F272A883500C21134 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B74DF891272A884100C21134 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B74DF893272AAEE400C21134 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B74DF8C3272ABC7600C21134 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
+		B74DF8C5272AD35F00C21134 /* ServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFactory.swift; sourceTree = "<group>"; };
+		B74DF8C7272AD8FC00C21134 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B7CC0A0B2729830A00598162 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		B7CC0A0E2729837F00598162 /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
 		B7CC0A122729877500598162 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
@@ -177,11 +183,13 @@
 			children = (
 				B74DF855272981FB00C21134 /* AppDelegate.swift */,
 				B74DF857272981FB00C21134 /* SceneDelegate.swift */,
+				B74DF8C9272AD90600C21134 /* Model */,
 				B7CC0A0D2729836100598162 /* RootCoordinator */,
 				B7CC0A102729842E00598162 /* LoginVC */,
 				B7CC0A112729873C00598162 /* SignUpVC */,
 				B74DF88A272A880400C21134 /* HomeScreen */,
-				B74DF885272A755D00C21134 /* Utilities */,
+				B74DF8C2272ABC4D00C21134 /* Services */,
+				B74DF885272A755D00C21134 /* Extensions */,
 				B74DF859272981FB00C21134 /* ViewController.swift */,
 				B74DF85B272981FB00C21134 /* Main.storyboard */,
 				B74DF85E272981FE00C21134 /* Assets.xcassets */,
@@ -209,12 +217,12 @@
 			path = CustomLoginDemoFirebaseUITests;
 			sourceTree = "<group>";
 		};
-		B74DF885272A755D00C21134 /* Utilities */ = {
+		B74DF885272A755D00C21134 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				B74DF886272A757E00C21134 /* Utilities.swift */,
+				B74DF886272A757E00C21134 /* Extensions.swift */,
 			);
-			path = Utilities;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		B74DF88A272A880400C21134 /* HomeScreen */ = {
@@ -226,6 +234,23 @@
 				B74DF891272A884100C21134 /* HomeViewController.swift */,
 			);
 			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		B74DF8C2272ABC4D00C21134 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B74DF8C5272AD35F00C21134 /* ServiceFactory.swift */,
+				B74DF8C3272ABC7600C21134 /* FirebaseService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B74DF8C9272AD90600C21134 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B74DF8C7272AD8FC00C21134 /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		B7CC0A0D2729836100598162 /* RootCoordinator */ = {
@@ -418,8 +443,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B74DF8C6272AD35F00C21134 /* ServiceFactory.swift in Sources */,
 				B74DF889272A871B00C21134 /* LoginViewController.swift in Sources */,
 				B7CC0A132729877500598162 /* LoginCoordinator.swift in Sources */,
+				B74DF8C4272ABC7600C21134 /* FirebaseService.swift in Sources */,
 				B74DF88C272A881E00C21134 /* HomeCoordinator.swift in Sources */,
 				B74DF88E272A882A00C21134 /* HomeViewModel.swift in Sources */,
 				B7CC0A15272987CE00598162 /* SignUpCoordinator.swift in Sources */,
@@ -434,8 +461,9 @@
 				B7CC0A192729881C00598162 /* LoginView.swift in Sources */,
 				B7CC0A1B2729885700598162 /* LoginViewModel.swift in Sources */,
 				B7CC0A1D2729886800598162 /* SignUpViewModel.swift in Sources */,
-				B74DF887272A757E00C21134 /* Utilities.swift in Sources */,
+				B74DF887272A757E00C21134 /* Extensions.swift in Sources */,
 				B74DF858272981FB00C21134 /* SceneDelegate.swift in Sources */,
+				B74DF8C8272AD8FC00C21134 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

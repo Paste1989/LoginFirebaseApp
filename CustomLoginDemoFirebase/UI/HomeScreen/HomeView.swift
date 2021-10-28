@@ -31,6 +31,7 @@ class HomeView: UIView {
         messageLabel.text = "Logged in successfully!"
         messageLabel.font = UIFont.systemFont(ofSize: 30, weight: .bold)
         messageLabel.textColor = .black
+        messageLabel.numberOfLines = 0
         self.addSubview(messageLabel)
         
         logoutButton.styleFilledButton()
@@ -46,7 +47,7 @@ class HomeView: UIView {
         NSLayoutConstraint.activate([
             messageLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor, constant: 0),
             messageLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: 0),
-            messageLabel.heightAnchor.constraint(equalToConstant: 50),
+            messageLabel.heightAnchor.constraint(equalToConstant: 150),
             messageLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 50),
             messageLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -50),
             
@@ -59,6 +60,11 @@ class HomeView: UIView {
    
     @objc func logoutTapped() {
         onLogoutTapped?()
+    }
+    
+    func updateView(message: String) {
+        guard let text = messageLabel.text else { return }
+        messageLabel.text = text + " " + message
     }
     
 }

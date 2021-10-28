@@ -31,6 +31,7 @@ class HomeViewController: UIViewController {
         addCallbacks()
         
         print("CurrentUser: \(user)")
+        homeView.updateView(message: user.firstName + " " + user.lastName)
     }
     
     private func addCallbacks() {

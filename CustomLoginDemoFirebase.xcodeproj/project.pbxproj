@@ -184,10 +184,7 @@
 				B74DF855272981FB00C21134 /* AppDelegate.swift */,
 				B74DF857272981FB00C21134 /* SceneDelegate.swift */,
 				B74DF8C9272AD90600C21134 /* Model */,
-				B7CC0A0D2729836100598162 /* RootCoordinator */,
-				B7CC0A102729842E00598162 /* LoginVC */,
-				B7CC0A112729873C00598162 /* SignUpVC */,
-				B74DF88A272A880400C21134 /* HomeScreen */,
+				B74DF8CA272AE63200C21134 /* UI */,
 				B74DF8C2272ABC4D00C21134 /* Services */,
 				B74DF885272A755D00C21134 /* Extensions */,
 				B74DF859272981FB00C21134 /* ViewController.swift */,
@@ -251,6 +248,17 @@
 				B74DF8C7272AD8FC00C21134 /* User.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B74DF8CA272AE63200C21134 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B7CC0A0D2729836100598162 /* RootCoordinator */,
+				B7CC0A102729842E00598162 /* LoginVC */,
+				B7CC0A112729873C00598162 /* SignUpVC */,
+				B74DF88A272A880400C21134 /* HomeScreen */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 		B7CC0A0D2729836100598162 /* RootCoordinator */ = {

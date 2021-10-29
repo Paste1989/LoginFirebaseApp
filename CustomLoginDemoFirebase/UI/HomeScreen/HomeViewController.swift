@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import sasaLib
 
 class HomeViewController: UIViewController {
     private lazy var homeView = HomeView()
@@ -29,6 +30,10 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         addCallbacks()
+        
+        //Sasa Library
+        let logger = Logger()
+        logger.printSomething(text: "SasaLib is working!")
     }
     
     private func addCallbacks() {

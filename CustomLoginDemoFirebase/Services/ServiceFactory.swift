@@ -8,7 +8,11 @@
 import Foundation
 
 class ServiceFactory {
-    static let firebaseService: FirebaseService = {
+    static let connectivityService: ConnectivityServiceProtcol = {
+        return ConnectivityService()
+    }()
+    
+    static let firebaseService: FirebaseServiceProtocol = {
         return FirebaseService()
     }()
 }

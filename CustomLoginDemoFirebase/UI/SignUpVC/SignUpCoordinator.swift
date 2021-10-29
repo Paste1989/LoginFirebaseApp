@@ -21,7 +21,7 @@ class SignUpCoordinator: Coordinator {
     
     private func createSignUpVC() -> UIViewController {
         let vc = SignUpViewController()
-        vc.viewModel = SignUpViewModel(firebaseService: ServiceFactory.firebaseService)
+        vc.viewModel = SignUpViewModel(firebaseService: ServiceFactory.firebaseService, connectivityService: ServiceFactory.connectivityService)
         
         vc.viewModel.onUserCreated = { [weak self] currentUser in
             self?.onUserCreated?(currentUser)

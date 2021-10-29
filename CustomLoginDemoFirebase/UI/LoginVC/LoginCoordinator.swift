@@ -22,7 +22,7 @@ class LoginCoordinator: Coordinator {
     
     private func createLoginVC() -> UIViewController {
         let vc = LoginViewController()
-        vc.viewModel = LoginViewModel()
+        vc.viewModel = LoginViewModel(firebaseService: ServiceFactory.firebaseService, connectivityService: ServiceFactory.connectivityService)
         
         vc.viewModel.onLoginSuccess = { [weak self] currentUser in
             self?.onLoggedIn?(currentUser)
@@ -30,7 +30,7 @@ class LoginCoordinator: Coordinator {
         
         vc.viewModel.onSignUp = { [weak self] in
             let vc = SignUpViewController()
-            vc.viewModel = SignUpViewModel(firebaseService: ServiceFactory.firebaseService)
+            vc.viewModel = SignUpViewModel(firebaseService: ServiceFactory.firebaseService, connectivityService: ServiceFactory.connectivityService)
             self?.navigationController.pushViewController(vc, animated: true)
             
             vc.viewModel.onUserCreated = { [weak self] currentUser in

@@ -16,47 +16,36 @@ class LoginViewModel {
     var onSignUp: (() -> Void)?
     var onError: ((String) -> Void)?
     
+    var firebaseService: FirebaseServiceProtocol
+    var connectivityService: ConnectivityServiceProtcol
+    init(firebaseService: FirebaseServiceProtocol, connectivityService: ConnectivityServiceProtcol) {
+        self.firebaseService = firebaseService
+        self.connectivityService = connectivityService
+    }
+    
     func login(_ user: User) {
         onStartActivity?()
-        Auth.auth().signIn(withEmail: user.email, password: user.password) { result, error in
-            if error != nil {
-                self.onError?("Error with user logging in.")
-                self.onEndActivity?()
-            }
-            else {
-                UserDefaults.standard.set(true, forKey: "isLoggedIn")
-                UserDefaults.standard.synchronize()
-                self.getUserData()
-            }
+        firebaseService.login(user)
+        firebaseService.onSuccess = { [weak self] in
+            UserDefaults.standard.set(true, forKey: "isLoggedIn")
+            UserDefaults.standard.synchronize()
+            self?.getUserData()
+        }
+        firebaseService.onError = { [weak self] errorMessage in
+            self?.onError?(errorMessage)
+            self?.onEndActivity?()
         }
     }
     
     private func getUserData() {
-        let db = Firestore.firestore()
-        db.collection("users").getDocuments { (snapshot, error) in
-            if error == nil {
-                if let snapshot = snapshot {
-
-                    guard let uid = Auth.auth().currentUser?.uid else { return }
-                    for document in snapshot.documents {
-                        let userUid = document["uid"] as? String ?? ""
-                        if userUid == uid {
-                            let firstName = document["firstName"] as? String ?? ""
-                            let lastName = document["lastName"] as? String ?? ""
-                            let email = document["email"] as? String ?? ""
-                            let password = document["password"] as? String ?? ""
-                            let currentUser = User(firstName: firstName, lastName: lastName, email: email, password: password)
-                            
-                            self.onLoginSuccess?(currentUser)
-                            self.onEndActivity?()
-                        }
-                    }
-                }
-            }
-            else {
-                self.onError?("Something went wrong with user data fetching.")
-                self.onEndActivity?()
-            }
+        firebaseService.getData()
+        firebaseService.onSuccessData = { [weak self] currentUser in
+            self?.onLoginSuccess?(currentUser)
+            self?.onEndActivity?()
+        }
+        firebaseService.onError = { [weak self] errorMessage in
+            self?.onError?(errorMessage)
+            self?.onEndActivity?()
         }
     }
 }

@@ -43,7 +43,7 @@ class SignUpViewController: UIViewController {
         }
         
         viewModel.onError = { [weak self] errorMessage in
-            print("Error: \(errorMessage)")
+            self?.showMessage(title: nil, messagae: errorMessage)
         }
     }
 }

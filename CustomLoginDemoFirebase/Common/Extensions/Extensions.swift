@@ -33,3 +33,11 @@ extension UIButton {
         self.tintColor = UIColor.black
     }
 }
+
+extension UIViewController {
+    func showMessage(title: String?, messagae: String) {
+        let alert = UIAlertController(title: title, message: messagae, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+}

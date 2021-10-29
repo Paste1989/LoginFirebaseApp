@@ -47,7 +47,7 @@ class LoginViewController: UIViewController {
         }
         
         viewModel.onError = { [weak self] errorMessage in
-            print(errorMessage)
+            self?.showMessage(title: nil, messagae: errorMessage)
         }
     }
 }

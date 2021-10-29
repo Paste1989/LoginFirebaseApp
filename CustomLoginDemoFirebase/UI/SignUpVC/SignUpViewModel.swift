@@ -16,9 +16,11 @@ class SignUpViewModel {
     var onUserCreated: ((User) -> Void)?
     var onError: ((String) -> Void)?
     
-    var firebaseService: FirebaseProtocol
-    init(firebaseService: FirebaseProtocol) {
+    var firebaseService: FirebaseServiceProtocol
+    var connectivityService: ConnectivityServiceProtcol
+    init(firebaseService: FirebaseServiceProtocol, connectivityService: ConnectivityServiceProtcol) {
         self.firebaseService = firebaseService
+        self.connectivityService = connectivityService
     }
     
     func checkForErrorsAndCreateUser(_ user: User) {

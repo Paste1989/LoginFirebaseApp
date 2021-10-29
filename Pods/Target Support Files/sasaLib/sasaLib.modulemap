@@ -1,0 +1,6 @@
+framework module sasaLib {
+  umbrella header "sasaLib-umbrella.h"
+
+  export *
+  module * { export * }
+}

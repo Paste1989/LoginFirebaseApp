@@ -1,0 +1,22 @@
+{
+  "name": "sasaLib",
+  "version": "0.1.1",
+  "summary": "This library enables easy print.",
+  "description": "'This library enables easy print. Just import and print what you want.'",
+  "homepage": "https://github.com/Sasa89/sasaLib",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Paste89": "brezovac.sasa@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Sasa89/sasaLib.git",
+    "tag": "0.1.1"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "sasaLib/Classes/**/*"
+}

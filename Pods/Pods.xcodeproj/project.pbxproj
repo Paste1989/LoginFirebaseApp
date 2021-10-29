@@ -1,0 +1,964 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 53;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		035ED6CFDB38BADED8761AF17F97F18A /* sasaLib-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B52CE74509B7BBDFF996777D181F4372 /* sasaLib-dummy.m */; };
+		0EB966FD8D4849AC27FD6DF45C609013 /* sasaLib-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A641EE3DEAFE8F3F2A0F2B4CA4649E4F /* sasaLib-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15C86707E5EACCCFA3F2778A86E0D5E8 /* Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D06E7FD7F59ACFA2403CA9D4C395A1A6 /* Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests-dummy.m */; };
+		1DD7DFCED8257418C557CB9C2058AE6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		5D262020A1AC0153CF7978355BC08603 /* Pods-CustomLoginDemoFirebase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CD43A514482B4B23DD77838D550FC10 /* Pods-CustomLoginDemoFirebase-dummy.m */; };
+		8D235CCB01CE03154B5A194C1F49449A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		8E330EE577260C7754919188DBDC98AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		8FD39D381EB06908410C8032E235A70E /* Pods-CustomLoginDemoFirebase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C11ABDF2CF4E7A7F9711B369BA38948 /* Pods-CustomLoginDemoFirebase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B171A7DCDFEBA01A59C1024292594B37 /* Pods-CustomLoginDemoFirebaseTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 388F9BE86D39669857731888D08B1377 /* Pods-CustomLoginDemoFirebaseTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6734CCB1C36E71EB66901581547B76E /* Pods-CustomLoginDemoFirebaseTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A6F2E6402CF3912C990AA15A0232C2 /* Pods-CustomLoginDemoFirebaseTests-dummy.m */; };
+		E53D05A5C4579EA4F22F0271792F7ECF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		E959646128DB984E970DEAB82E429EA6 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0869EE1FC90011E4B309D752D596BF4C /* ReplaceMe.swift */; };
+		F58E5A09A9C4CD544496D5B9DF7B851E /* Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 60CFEF144A77DDDAF81A956C6BA7D06F /* Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2FBE37D499A14595A5B46C7283E56CD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 760134010E7D1AD073F9E4F16A51FF84;
+			remoteInfo = sasaLib;
+		};
+		9C7B1B9B2AB92395F14D98B0EE49595C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C0829790AD886C40227881B121FC7EA;
+			remoteInfo = "Pods-CustomLoginDemoFirebase";
+		};
+		A14B42FB702C70C7880788002521AE46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 760134010E7D1AD073F9E4F16A51FF84;
+			remoteInfo = sasaLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		046F43D9CF1E9FEA87A1CC88889F5950 /* Pods-CustomLoginDemoFirebaseTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CustomLoginDemoFirebaseTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0869EE1FC90011E4B309D752D596BF4C /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = sasaLib/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		0A24963DB9A52E4CFA48B6B1784190EB /* Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0F8AA78D95111278450881901855A130 /* Pods-CustomLoginDemoFirebase-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CustomLoginDemoFirebase-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1557E15665D316220895DEF45B515010 /* Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		163A2860DC2C37F98BB736DAD1BB79D2 /* Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests-frameworks.sh"; sourceTree = "<group>"; };
+		1BAB2DB3C5AD7A1263A38069E0928FCA /* Pods-CustomLoginDemoFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CustomLoginDemoFirebase.debug.xcconfig"; sourceTree = "<group>"; };
+		1F0725DBA41A72732FE5D4AE8BB7F441 /* sasaLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = sasaLib.release.xcconfig; sourceTree = "<group>"; };
+		1F7B257F18DE18328A4BF20A88A15124 /* sasaLib-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "sasaLib-prefix.pch"; sourceTree = "<group>"; };
+		2CBAE6C916890FC89CA076C79C8BF5D3 /* Pods-CustomLoginDemoFirebaseTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CustomLoginDemoFirebaseTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		388F9BE86D39669857731888D08B1377 /* Pods-CustomLoginDemoFirebaseTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CustomLoginDemoFirebaseTests-umbrella.h"; sourceTree = "<group>"; };
+		43E9DA1894FD3EF212C3D7BC53E8B1A4 /* Pods-CustomLoginDemoFirebaseTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CustomLoginDemoFirebaseTests.modulemap"; sourceTree = "<group>"; };
+		48A3FE551EC6C148C6F5BFAE15A3F18F /* sasaLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = sasaLib.debug.xcconfig; sourceTree = "<group>"; };
+		54195440D30CC744DDDBE721E3E82745 /* Pods-CustomLoginDemoFirebaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CustomLoginDemoFirebaseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5C0564539C2DD42C99D97D61D33B4914 /* Pods-CustomLoginDemoFirebase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CustomLoginDemoFirebase-Info.plist"; sourceTree = "<group>"; };
+		60CFEF144A77DDDAF81A956C6BA7D06F /* Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests-umbrella.h"; sourceTree = "<group>"; };
+		69D3469A8F5EBEA4856A617BA9EF3B57 /* sasaLib.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = sasaLib.modulemap; sourceTree = "<group>"; };
+		71A6F2E6402CF3912C990AA15A0232C2 /* Pods-CustomLoginDemoFirebaseTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CustomLoginDemoFirebaseTests-dummy.m"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		74DA6401DD3D87AAC69A1B3AC956E78A /* Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		844B22616C60CDE8E78F17D2C28D99EE /* Pods-CustomLoginDemoFirebase-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CustomLoginDemoFirebase-acknowledgements.plist"; sourceTree = "<group>"; };
+		8C11ABDF2CF4E7A7F9711B369BA38948 /* Pods-CustomLoginDemoFirebase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CustomLoginDemoFirebase-umbrella.h"; sourceTree = "<group>"; };
+		8E6C60604F362E9FAE2621C43277E437 /* Pods-CustomLoginDemoFirebaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CustomLoginDemoFirebaseTests.release.xcconfig"; sourceTree = "<group>"; };
+		9262D668025D37F8E0D3BFF0D009016D /* Pods-CustomLoginDemoFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CustomLoginDemoFirebase.release.xcconfig"; sourceTree = "<group>"; };
+		9991890C6389C86ED986960C09B29A08 /* sasaLib-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "sasaLib-Info.plist"; sourceTree = "<group>"; };
+		9CD43A514482B4B23DD77838D550FC10 /* Pods-CustomLoginDemoFirebase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CustomLoginDemoFirebase-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A641EE3DEAFE8F3F2A0F2B4CA4649E4F /* sasaLib-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "sasaLib-umbrella.h"; sourceTree = "<group>"; };
+		B52CE74509B7BBDFF996777D181F4372 /* sasaLib-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "sasaLib-dummy.m"; sourceTree = "<group>"; };
+		B9364F8CDF913E6FDFD686066EF10165 /* Pods-CustomLoginDemoFirebase */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-CustomLoginDemoFirebase"; path = Pods_CustomLoginDemoFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDD50A8B5DE8ADFFA557618F66E133C5 /* Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests-Info.plist"; sourceTree = "<group>"; };
+		BE5D23CB3F1B7B61A98D2732B2D8E138 /* sasaLib */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = sasaLib; path = sasaLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D06E7FD7F59ACFA2403CA9D4C395A1A6 /* Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests-dummy.m"; sourceTree = "<group>"; };
+		D7D59B8E161EFA8C993C28D5EEFDAD4B /* Pods-CustomLoginDemoFirebaseTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CustomLoginDemoFirebaseTests-Info.plist"; sourceTree = "<group>"; };
+		DB9D715288EB0742A3621BF209DFADA6 /* Pods-CustomLoginDemoFirebase-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CustomLoginDemoFirebase-frameworks.sh"; sourceTree = "<group>"; };
+		ECF040F7B88FE0CB3EF34B65776B6E59 /* Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests"; path = Pods_CustomLoginDemoFirebase_CustomLoginDemoFirebaseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED225891A027A43CDCC7C9A1171863FD /* Pods-CustomLoginDemoFirebaseTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-CustomLoginDemoFirebaseTests"; path = Pods_CustomLoginDemoFirebaseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2D3DA62073B52302F65D49F8C592127 /* Pods-CustomLoginDemoFirebase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CustomLoginDemoFirebase.modulemap"; sourceTree = "<group>"; };
+		FC8A02DDD12370152707A5F70359B5C0 /* Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests.modulemap"; sourceTree = "<group>"; };
+		FEA65DAC27D31A853B1BBAD5719F5FD5 /* Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1ACB0246477C38371A5A2BAF3F610969 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D235CCB01CE03154B5A194C1F49449A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BBC75A586864ACBAAD46777E25D57E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E330EE577260C7754919188DBDC98AE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9D1A5402FB61F67861DC896D3FBFE55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E53D05A5C4579EA4F22F0271792F7ECF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F26CD810DF57B5A0E58A98531EF3A319 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DD7DFCED8257418C557CB9C2058AE6D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F9B8F71879428EE069D008C50AAA0A3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				69D3469A8F5EBEA4856A617BA9EF3B57 /* sasaLib.modulemap */,
+				B52CE74509B7BBDFF996777D181F4372 /* sasaLib-dummy.m */,
+				9991890C6389C86ED986960C09B29A08 /* sasaLib-Info.plist */,
+				1F7B257F18DE18328A4BF20A88A15124 /* sasaLib-prefix.pch */,
+				A641EE3DEAFE8F3F2A0F2B4CA4649E4F /* sasaLib-umbrella.h */,
+				48A3FE551EC6C148C6F5BFAE15A3F18F /* sasaLib.debug.xcconfig */,
+				1F0725DBA41A72732FE5D4AE8BB7F441 /* sasaLib.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/sasaLib";
+			sourceTree = "<group>";
+		};
+		2CC0D9BF26BA523863C67DF63E39E088 /* Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FC8A02DDD12370152707A5F70359B5C0 /* Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests.modulemap */,
+				FEA65DAC27D31A853B1BBAD5719F5FD5 /* Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests-acknowledgements.markdown */,
+				74DA6401DD3D87AAC69A1B3AC956E78A /* Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests-acknowledgements.plist */,
+				D06E7FD7F59ACFA2403CA9D4C395A1A6 /* Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests-dummy.m */,
+				163A2860DC2C37F98BB736DAD1BB79D2 /* Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests-frameworks.sh */,
+				BDD50A8B5DE8ADFFA557618F66E133C5 /* Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests-Info.plist */,
+				60CFEF144A77DDDAF81A956C6BA7D06F /* Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests-umbrella.h */,
+				1557E15665D316220895DEF45B515010 /* Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests.debug.xcconfig */,
+				0A24963DB9A52E4CFA48B6B1784190EB /* Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests.release.xcconfig */,
+			);
+			name = "Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests";
+			path = "Target Support Files/Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		79B777BDCF01A76824EB319481BCCCF7 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				98D0E87C0BAD217B6E970307B72DABAB /* Pods-CustomLoginDemoFirebase */,
+				2CC0D9BF26BA523863C67DF63E39E088 /* Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests */,
+				B4DF3B75FF6001413F051BF7E55858ED /* Pods-CustomLoginDemoFirebaseTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		98D0E87C0BAD217B6E970307B72DABAB /* Pods-CustomLoginDemoFirebase */ = {
+			isa = PBXGroup;
+			children = (
+				F2D3DA62073B52302F65D49F8C592127 /* Pods-CustomLoginDemoFirebase.modulemap */,
+				0F8AA78D95111278450881901855A130 /* Pods-CustomLoginDemoFirebase-acknowledgements.markdown */,
+				844B22616C60CDE8E78F17D2C28D99EE /* Pods-CustomLoginDemoFirebase-acknowledgements.plist */,
+				9CD43A514482B4B23DD77838D550FC10 /* Pods-CustomLoginDemoFirebase-dummy.m */,
+				DB9D715288EB0742A3621BF209DFADA6 /* Pods-CustomLoginDemoFirebase-frameworks.sh */,
+				5C0564539C2DD42C99D97D61D33B4914 /* Pods-CustomLoginDemoFirebase-Info.plist */,
+				8C11ABDF2CF4E7A7F9711B369BA38948 /* Pods-CustomLoginDemoFirebase-umbrella.h */,
+				1BAB2DB3C5AD7A1263A38069E0928FCA /* Pods-CustomLoginDemoFirebase.debug.xcconfig */,
+				9262D668025D37F8E0D3BFF0D009016D /* Pods-CustomLoginDemoFirebase.release.xcconfig */,
+			);
+			name = "Pods-CustomLoginDemoFirebase";
+			path = "Target Support Files/Pods-CustomLoginDemoFirebase";
+			sourceTree = "<group>";
+		};
+		B4DF3B75FF6001413F051BF7E55858ED /* Pods-CustomLoginDemoFirebaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				43E9DA1894FD3EF212C3D7BC53E8B1A4 /* Pods-CustomLoginDemoFirebaseTests.modulemap */,
+				046F43D9CF1E9FEA87A1CC88889F5950 /* Pods-CustomLoginDemoFirebaseTests-acknowledgements.markdown */,
+				2CBAE6C916890FC89CA076C79C8BF5D3 /* Pods-CustomLoginDemoFirebaseTests-acknowledgements.plist */,
+				71A6F2E6402CF3912C990AA15A0232C2 /* Pods-CustomLoginDemoFirebaseTests-dummy.m */,
+				D7D59B8E161EFA8C993C28D5EEFDAD4B /* Pods-CustomLoginDemoFirebaseTests-Info.plist */,
+				388F9BE86D39669857731888D08B1377 /* Pods-CustomLoginDemoFirebaseTests-umbrella.h */,
+				54195440D30CC744DDDBE721E3E82745 /* Pods-CustomLoginDemoFirebaseTests.debug.xcconfig */,
+				8E6C60604F362E9FAE2621C43277E437 /* Pods-CustomLoginDemoFirebaseTests.release.xcconfig */,
+			);
+			name = "Pods-CustomLoginDemoFirebaseTests";
+			path = "Target Support Files/Pods-CustomLoginDemoFirebaseTests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				DC48E9CC63D093ACFC665F865441F558 /* Pods */,
+				F650E8E95CCF4912E6546BA021CCF360 /* Products */,
+				79B777BDCF01A76824EB319481BCCCF7 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DAF9BF074CA8DB44EE3986500BBF99BD /* sasaLib */ = {
+			isa = PBXGroup;
+			children = (
+				0869EE1FC90011E4B309D752D596BF4C /* ReplaceMe.swift */,
+				1F9B8F71879428EE069D008C50AAA0A3 /* Support Files */,
+			);
+			name = sasaLib;
+			path = sasaLib;
+			sourceTree = "<group>";
+		};
+		DC48E9CC63D093ACFC665F865441F558 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DAF9BF074CA8DB44EE3986500BBF99BD /* sasaLib */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F650E8E95CCF4912E6546BA021CCF360 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9364F8CDF913E6FDFD686066EF10165 /* Pods-CustomLoginDemoFirebase */,
+				ECF040F7B88FE0CB3EF34B65776B6E59 /* Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests */,
+				ED225891A027A43CDCC7C9A1171863FD /* Pods-CustomLoginDemoFirebaseTests */,
+				BE5D23CB3F1B7B61A98D2732B2D8E138 /* sasaLib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		55AF0BD3A5878529637C0930CF243DE6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B171A7DCDFEBA01A59C1024292594B37 /* Pods-CustomLoginDemoFirebaseTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		642C403DD490B3E09DD3658BCD1E6041 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F58E5A09A9C4CD544496D5B9DF7B851E /* Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2E0D1D31FD18893661366D12AD45EC5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EB966FD8D4849AC27FD6DF45C609013 /* sasaLib-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAA5E2FBADE405ECF445818E29FEE069 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FD39D381EB06908410C8032E235A70E /* Pods-CustomLoginDemoFirebase-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5AAA6267CC4E216ED506581C8DE185D8 /* Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5400B0E8FE1A357E16EF05CF657966E /* Build configuration list for PBXNativeTarget "Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests" */;
+			buildPhases = (
+				642C403DD490B3E09DD3658BCD1E6041 /* Headers */,
+				CBB9AC4F54128E2A97F57FADF517B283 /* Sources */,
+				F26CD810DF57B5A0E58A98531EF3A319 /* Frameworks */,
+				B32BAAE10DD06D50842574C09CAA91E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A234E988088BB0FE8E569AF92BB8A9C /* PBXTargetDependency */,
+			);
+			name = "Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests";
+			productName = Pods_CustomLoginDemoFirebase_CustomLoginDemoFirebaseUITests;
+			productReference = ECF040F7B88FE0CB3EF34B65776B6E59 /* Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		716E1EA3110BE55F6849E9F07D178EDA /* Pods-CustomLoginDemoFirebaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2250DC864F5B63242346CC0A51C0403B /* Build configuration list for PBXNativeTarget "Pods-CustomLoginDemoFirebaseTests" */;
+			buildPhases = (
+				55AF0BD3A5878529637C0930CF243DE6 /* Headers */,
+				6132B432B1224608FC47C34E22F57918 /* Sources */,
+				7BBC75A586864ACBAAD46777E25D57E1 /* Frameworks */,
+				BDE23562F16052E89724D6B65282EEBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FE01177930D25D6E19642EA36DE535E /* PBXTargetDependency */,
+			);
+			name = "Pods-CustomLoginDemoFirebaseTests";
+			productName = Pods_CustomLoginDemoFirebaseTests;
+			productReference = ED225891A027A43CDCC7C9A1171863FD /* Pods-CustomLoginDemoFirebaseTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		760134010E7D1AD073F9E4F16A51FF84 /* sasaLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0E38D28E7199105565EE0E7365FEAED /* Build configuration list for PBXNativeTarget "sasaLib" */;
+			buildPhases = (
+				A2E0D1D31FD18893661366D12AD45EC5 /* Headers */,
+				AEC7D85766C6A1BDD84C7D6E7B392A0B /* Sources */,
+				1ACB0246477C38371A5A2BAF3F610969 /* Frameworks */,
+				4EE4ABF1F7808DDDD3C1580D5D8C0B15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sasaLib;
+			productName = sasaLib;
+			productReference = BE5D23CB3F1B7B61A98D2732B2D8E138 /* sasaLib */;
+			productType = "com.apple.product-type.framework";
+		};
+		7C0829790AD886C40227881B121FC7EA /* Pods-CustomLoginDemoFirebase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6313F1913CA200CB1E87EB794DC5D615 /* Build configuration list for PBXNativeTarget "Pods-CustomLoginDemoFirebase" */;
+			buildPhases = (
+				CAA5E2FBADE405ECF445818E29FEE069 /* Headers */,
+				1AC88D0F0DBB3EB164CA07A34AFC7988 /* Sources */,
+				C9D1A5402FB61F67861DC896D3FBFE55 /* Frameworks */,
+				0B02C81CBC61B828565217280669BBB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				108A42FD1AEE1309503FB6CA2C6F2BFD /* PBXTargetDependency */,
+			);
+			name = "Pods-CustomLoginDemoFirebase";
+			productName = Pods_CustomLoginDemoFirebase;
+			productReference = B9364F8CDF913E6FDFD686066EF10165 /* Pods-CustomLoginDemoFirebase */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 11.4";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = F650E8E95CCF4912E6546BA021CCF360 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7C0829790AD886C40227881B121FC7EA /* Pods-CustomLoginDemoFirebase */,
+				5AAA6267CC4E216ED506581C8DE185D8 /* Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests */,
+				716E1EA3110BE55F6849E9F07D178EDA /* Pods-CustomLoginDemoFirebaseTests */,
+				760134010E7D1AD073F9E4F16A51FF84 /* sasaLib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0B02C81CBC61B828565217280669BBB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EE4ABF1F7808DDDD3C1580D5D8C0B15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B32BAAE10DD06D50842574C09CAA91E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDE23562F16052E89724D6B65282EEBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1AC88D0F0DBB3EB164CA07A34AFC7988 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D262020A1AC0153CF7978355BC08603 /* Pods-CustomLoginDemoFirebase-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6132B432B1224608FC47C34E22F57918 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6734CCB1C36E71EB66901581547B76E /* Pods-CustomLoginDemoFirebaseTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEC7D85766C6A1BDD84C7D6E7B392A0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E959646128DB984E970DEAB82E429EA6 /* ReplaceMe.swift in Sources */,
+				035ED6CFDB38BADED8761AF17F97F18A /* sasaLib-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBB9AC4F54128E2A97F57FADF517B283 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15C86707E5EACCCFA3F2778A86E0D5E8 /* Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		108A42FD1AEE1309503FB6CA2C6F2BFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = sasaLib;
+			target = 760134010E7D1AD073F9E4F16A51FF84 /* sasaLib */;
+			targetProxy = A14B42FB702C70C7880788002521AE46 /* PBXContainerItemProxy */;
+		};
+		8A234E988088BB0FE8E569AF92BB8A9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = sasaLib;
+			target = 760134010E7D1AD073F9E4F16A51FF84 /* sasaLib */;
+			targetProxy = 2FBE37D499A14595A5B46C7283E56CD9 /* PBXContainerItemProxy */;
+		};
+		9FE01177930D25D6E19642EA36DE535E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-CustomLoginDemoFirebase";
+			target = 7C0829790AD886C40227881B121FC7EA /* Pods-CustomLoginDemoFirebase */;
+			targetProxy = 9C7B1B9B2AB92395F14D98B0EE49595C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		09AD078B3F55713A5928D4E64DE3D3AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54195440D30CC744DDDBE721E3E82745 /* Pods-CustomLoginDemoFirebaseTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CustomLoginDemoFirebaseTests/Pods-CustomLoginDemoFirebaseTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CustomLoginDemoFirebaseTests/Pods-CustomLoginDemoFirebaseTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0DD128B5B7E37CA2DB7F253CF47DCFDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48A3FE551EC6C148C6F5BFAE15A3F18F /* sasaLib.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/sasaLib/sasaLib-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/sasaLib/sasaLib-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/sasaLib/sasaLib.modulemap";
+				PRODUCT_MODULE_NAME = sasaLib;
+				PRODUCT_NAME = sasaLib;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		443154740468CE7D00C7C650A6338FA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E6C60604F362E9FAE2621C43277E437 /* Pods-CustomLoginDemoFirebaseTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CustomLoginDemoFirebaseTests/Pods-CustomLoginDemoFirebaseTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CustomLoginDemoFirebaseTests/Pods-CustomLoginDemoFirebaseTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5FB8A2B30BCCF649BA511CF760CC83D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F0725DBA41A72732FE5D4AE8BB7F441 /* sasaLib.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/sasaLib/sasaLib-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/sasaLib/sasaLib-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/sasaLib/sasaLib.modulemap";
+				PRODUCT_MODULE_NAME = sasaLib;
+				PRODUCT_NAME = sasaLib;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		893BB901C2B44ACB6BA1DCBA709BA6A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9262D668025D37F8E0D3BFF0D009016D /* Pods-CustomLoginDemoFirebase.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CustomLoginDemoFirebase/Pods-CustomLoginDemoFirebase-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CustomLoginDemoFirebase/Pods-CustomLoginDemoFirebase.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		AEFD6A2B7E9976303314E4D53A53766D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A24963DB9A52E4CFA48B6B1784190EB /* Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests/Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests/Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EC641C86A2888A51F9C253D15B798823 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1557E15665D316220895DEF45B515010 /* Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests/Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests/Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FA470FEA8A2E9675096D61473B9EEBC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BAB2DB3C5AD7A1263A38069E0928FCA /* Pods-CustomLoginDemoFirebase.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CustomLoginDemoFirebase/Pods-CustomLoginDemoFirebase-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CustomLoginDemoFirebase/Pods-CustomLoginDemoFirebase.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2250DC864F5B63242346CC0A51C0403B /* Build configuration list for PBXNativeTarget "Pods-CustomLoginDemoFirebaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09AD078B3F55713A5928D4E64DE3D3AA /* Debug */,
+				443154740468CE7D00C7C650A6338FA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
+				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6313F1913CA200CB1E87EB794DC5D615 /* Build configuration list for PBXNativeTarget "Pods-CustomLoginDemoFirebase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA470FEA8A2E9675096D61473B9EEBC0 /* Debug */,
+				893BB901C2B44ACB6BA1DCBA709BA6A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0E38D28E7199105565EE0E7365FEAED /* Build configuration list for PBXNativeTarget "sasaLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DD128B5B7E37CA2DB7F253CF47DCFDB /* Debug */,
+				5FB8A2B30BCCF649BA511CF760CC83D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5400B0E8FE1A357E16EF05CF657966E /* Build configuration list for PBXNativeTarget "Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC641C86A2888A51F9C253D15B798823 /* Debug */,
+				AEFD6A2B7E9976303314E4D53A53766D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -1,0 +1,21 @@
+PODS:
+  - sasaLib (0.1.1)
+
+DEPENDENCIES:
+  - sasaLib (from `https://github.com/Paste1989/sasaLib.git`)
+
+EXTERNAL SOURCES:
+  sasaLib:
+    :git: https://github.com/Paste1989/sasaLib.git
+
+CHECKOUT OPTIONS:
+  sasaLib:
+    :commit: 249052882de0f56f3baeb3c89f880c8c78a898b7
+    :git: https://github.com/Paste1989/sasaLib.git
+
+SPEC CHECKSUMS:
+  sasaLib: 5aa18e688f8ab95ba6d128d44ec151196a272127
+
+PODFILE CHECKSUM: 6fc354159c491a464fcf588e179d6d46b2057733
+
+COCOAPODS: 1.11.2

@@ -11,6 +11,8 @@ import FirebaseAuth
 import Firebase
 
 class SignUpViewModel {
+    var onStartActivity: (() -> Void)?
+    var onEndActivity: (() -> Void)?
     var onUserCreated: ((User) -> Void)?
     var onError: ((String) -> Void)?
     
@@ -20,20 +22,23 @@ class SignUpViewModel {
     }
     
     func checkForErrorsAndCreateUser(_ user: User) {
+        onStartActivity?()
         if let validationError = validateFields(user.firstName, user.lastName, user.email, user.password) {
             onError?(validationError)
+            onEndActivity?()
         }
         else {
             firebaseService.createUser(firstName: user.firstName, lastName: user.lastName, email: user.email, password: user.password)
             firebaseService.onSuccess = { [weak self] in
                 let currentUser = User(firstName: user.firstName, lastName: user.lastName, email: user.email, password: user.password)
                 self?.onUserCreated?(currentUser)
-                
+                self?.onEndActivity?()
                 UserDefaults.standard.set(true, forKey: "isLoggedIn")
                 UserDefaults.standard.synchronize()
             }
             firebaseService.onError = { [weak self] errorMessage in
                 self?.onError?(errorMessage)
+                self?.onEndActivity?()
             }
         }
     }

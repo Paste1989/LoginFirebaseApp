@@ -34,7 +34,7 @@ class HomeViewController: UIViewController {
     private func addCallbacks() {
         homeView.updateView(message: user.firstName + " " + user.lastName)
         homeView.onLogoutTapped = { [weak self] in
-            self?.viewModel.onLogout?()
+            self?.viewModel.logout()
         }
     }
 }

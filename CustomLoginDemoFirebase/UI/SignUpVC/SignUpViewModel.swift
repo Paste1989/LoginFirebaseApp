@@ -28,6 +28,9 @@ class SignUpViewModel {
             firebaseService.onSuccess = { [weak self] in
                 let currentUser = User(firstName: user.firstName, lastName: user.lastName, email: user.email, password: user.password)
                 self?.onUserCreated?(currentUser)
+                
+                UserDefaults.standard.set(true, forKey: "isLoggedIn")
+                UserDefaults.standard.synchronize()
             }
             firebaseService.onError = { [weak self] errorMessage in
                 self?.onError?(errorMessage)

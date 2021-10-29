@@ -94,8 +94,10 @@ class LoginView: UIView {
     }
     
     @objc func loginTapped() {
-        let currentUser = User(firstName: "", lastName: "", email: "", password: "")
-        onLoginTapped?(currentUser)
+        if let email = emailTextField.text, let password = passwodTextField.text {
+            let currentUser = User(firstName: "", lastName: "", email: email, password: password)
+            onLoginTapped?(currentUser)
+        }
     }
     
     @objc func signUpTapped() {

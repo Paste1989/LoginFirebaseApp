@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Firebase
 
 class RootCoordinator: Coordinator {
     let navigationController = UINavigationController()
@@ -14,7 +15,16 @@ class RootCoordinator: Coordinator {
     var currentUser: User?
     
     func start() -> UIViewController {
-        let vc = setLoginCoordinatorAsRoot()
+        let vc: UIViewController
+        
+        let userLoggedIn = UserDefaults.standard.bool(forKey: "isLoggedIn")
+        UserDefaults.standard.synchronize()
+        if !userLoggedIn {
+            vc = setLoginCoordinatorAsRoot()
+        }
+        else {
+           vc = setHomeCoordinatorAsRoot(currentUser ?? User(firstName: "", lastName: "", email: "", password: ""))
+        }
         
         return vc
     }

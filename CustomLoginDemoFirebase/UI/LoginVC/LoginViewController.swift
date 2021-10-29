@@ -18,17 +18,19 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         addCallbacks()
     }
     
     private func addCallbacks() {
         loginView.onLoginTapped = { [weak self] currentUser in
-            self?.viewModel.onLogin?(currentUser)
-            
+            self?.viewModel.login(currentUser)
         }
         loginView.onSignUpTapped = { [weak self] in
             self?.viewModel.onSignUp?()
+        }
+        
+        viewModel.onError = { [weak self] errorMessage in
+            print(errorMessage)
         }
     }
 }

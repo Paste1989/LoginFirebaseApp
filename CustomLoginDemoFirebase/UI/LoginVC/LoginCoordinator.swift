@@ -24,7 +24,7 @@ class LoginCoordinator: Coordinator {
         let vc = LoginViewController()
         vc.viewModel = LoginViewModel()
         
-        vc.viewModel.onLogin = { [weak self] currentUser in
+        vc.viewModel.onLoginSuccess = { [weak self] currentUser in
             self?.onLoggedIn?(currentUser)
         }
         

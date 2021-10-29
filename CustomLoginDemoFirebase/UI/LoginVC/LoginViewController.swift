@@ -27,7 +27,6 @@ class LoginViewController: UIViewController {
             self?.viewModel.onLogin?(currentUser)
             
         }
-        
         loginView.onSignUpTapped = { [weak self] in
             self?.viewModel.onSignUp?()
         }

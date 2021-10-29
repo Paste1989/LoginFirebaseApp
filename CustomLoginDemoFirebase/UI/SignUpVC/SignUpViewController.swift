@@ -22,8 +22,8 @@ class SignUpViewController: UIViewController {
     }
     
     private func addCallbacks() {
-        signUpView.onRegisterTapped = { [weak self] firstName, lastName, email ,password in
-            self?.viewModel.checkForErrorsAndCreateUser(firstName: firstName, lastName: lastName, email: email, password: password)
+        signUpView.onRegisterTapped = { [weak self] user in
+            self?.viewModel.checkForErrorsAndCreateUser(user)
         }
         
         viewModel.onError = { [weak self] errorMessage in

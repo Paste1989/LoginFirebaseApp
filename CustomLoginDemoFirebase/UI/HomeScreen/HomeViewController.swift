@@ -29,12 +29,10 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         addCallbacks()
-        
-        print("CurrentUser: \(user)")
-        homeView.updateView(message: user.firstName + " " + user.lastName)
     }
     
     private func addCallbacks() {
+        homeView.updateView(message: user.firstName + " " + user.lastName)
         homeView.onLogoutTapped = { [weak self] in
             self?.viewModel.onLogout?()
         }

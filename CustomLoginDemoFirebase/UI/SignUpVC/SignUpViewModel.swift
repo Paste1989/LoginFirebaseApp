@@ -19,14 +19,14 @@ class SignUpViewModel {
         self.firebaseService = firebaseService
     }
     
-    func checkForErrorsAndCreateUser(firstName: String, lastName: String, email: String, password: String) {
-        if let validationError = validateFields(firstName, lastName, email, password) {
+    func checkForErrorsAndCreateUser(_ user: User) {
+        if let validationError = validateFields(user.firstName, user.lastName, user.email, user.password) {
             onError?(validationError)
         }
         else {
-            firebaseService.createUser(firstName: firstName, lastName: lastName, email: email, password: password)
+            firebaseService.createUser(firstName: user.firstName, lastName: user.lastName, email: user.email, password: user.password)
             firebaseService.onSuccess = { [weak self] in
-                let currentUser = User(firstName: firstName, lastName: lastName, email: email, password: password)
+                let currentUser = User(firstName: user.firstName, lastName: user.lastName, email: user.email, password: user.password)
                 self?.onUserCreated?(currentUser)
             }
             firebaseService.onError = { [weak self] errorMessage in
@@ -40,6 +40,7 @@ class SignUpViewModel {
             lastName.trimmingCharacters(in: .whitespaces) == "" ||
             email.trimmingCharacters(in: .whitespaces) == "" ||
             password.trimmingCharacters(in: .whitespaces) == "" {
+            
             return "Please fill in all fields."
         }
         
@@ -49,7 +50,6 @@ class SignUpViewModel {
         }
         return nil
     }
-    
     
     private func isPasswordValid(_ password: String) -> Bool {
         let passwordTest = "^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*()\\-_=+{}|?>.<,:;~`’]{8,}$"

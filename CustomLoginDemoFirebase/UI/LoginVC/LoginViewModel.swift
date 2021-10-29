@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import FirebaseAuth
+import Firebase
 
 class LoginViewModel {
     var onLogin: ((User) -> Void)?

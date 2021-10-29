@@ -19,7 +19,6 @@ class SignUpCoordinator: Coordinator {
         return navigationController
     }
     
-    
     private func createSignUpVC() -> UIViewController {
         let vc = SignUpViewController()
         vc.viewModel = SignUpViewModel(firebaseService: ServiceFactory.firebaseService)

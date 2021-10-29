@@ -20,7 +20,6 @@ class LoginCoordinator: Coordinator {
         return navigationController
     }
     
-    
     private func createLoginVC() -> UIViewController {
         let vc = LoginViewController()
         vc.viewModel = LoginViewModel()

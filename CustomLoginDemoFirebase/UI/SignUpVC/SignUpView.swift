@@ -16,7 +16,7 @@ class SignUpView: UIView {
     private lazy var passwodTextField = UITextField()
     private lazy var registerButton = UIButton(type: .system)
     
-    var onRegisterTapped: ((String, String, String, String) -> Void)?
+    var onRegisterTapped: ((User) -> Void)?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -104,7 +104,8 @@ class SignUpView: UIView {
     
     @objc func registerTapped() {
         if let firstName = firstNameTextfield.text, let lastName = lastNameTextField.text, let email = emailTextField.text, let password = passwodTextField.text {
-            onRegisterTapped?(firstName, lastName, email, password)
+            let user = User(firstName: firstName, lastName: lastName, email: email, password: password)
+            onRegisterTapped?(user)
         }
     }
 }

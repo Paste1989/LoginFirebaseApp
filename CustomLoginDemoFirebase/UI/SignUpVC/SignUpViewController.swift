@@ -29,6 +29,11 @@ class SignUpViewController: UIViewController {
         addCallbacks()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = false
+    }
+    
     private func addCallbacks() {
         signUpView.onRegisterTapped = { [weak self] user in
             self?.viewModel.checkForErrorsAndCreateUser(user)

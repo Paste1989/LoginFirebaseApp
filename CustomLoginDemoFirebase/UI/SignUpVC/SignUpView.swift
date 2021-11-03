@@ -31,6 +31,11 @@ class SignUpView: UIView {
 
     
     private func setupView() {
+        firstNameTextfield.delegate = self
+        lastNameTextField.delegate = self
+        emailTextField.delegate = self
+        passwodTextField.delegate = self
+        
         self.backgroundColor = .lightGray
         
         stackView.backgroundColor = .white
@@ -41,18 +46,22 @@ class SignUpView: UIView {
         
         firstNameTextfield.styleTextField()
         firstNameTextfield.placeholder = "first name"
+        firstNameTextfield.textColor = UIColor.black
         stackView.addSubview(firstNameTextfield)
         
         lastNameTextField.styleTextField()
         lastNameTextField.placeholder = "last name"
+        lastNameTextField.textColor = UIColor.black
         stackView.addSubview(lastNameTextField)
         
         emailTextField.styleTextField()
         emailTextField.placeholder = "email"
+        emailTextField.textColor = UIColor.black
         stackView.addSubview(emailTextField)
         
         passwodTextField.styleTextField()
         passwodTextField.placeholder = "password"
+        passwodTextField.textColor = UIColor.black
         stackView.addSubview(passwodTextField)
         
         registerButton.styleFilledButton()
@@ -107,5 +116,12 @@ class SignUpView: UIView {
             let user = User(firstName: firstName, lastName: lastName, email: email, password: password)
             onRegisterTapped?(user)
         }
+    }
+}
+
+extension SignUpView: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }

@@ -36,6 +36,12 @@ class HomeViewController: UIViewController {
         logger.printSomething(text: "SasaLib is working!")
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = true
+        navigationController?.navigationBar.backgroundColor = UIColor.clear
+    }
+    
     private func addCallbacks() {
         homeView.updateView(message: user.firstName + " " + user.lastName)
         homeView.onLogoutTapped = { [weak self] in

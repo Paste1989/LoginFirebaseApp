@@ -31,6 +31,9 @@ class LoginView: UIView {
 
     
     private func setupView() {
+        emailTextField.delegate = self
+        passwodTextField.delegate = self
+        
         self.backgroundColor = .lightGray
         
         stackView.backgroundColor = .white
@@ -41,10 +44,12 @@ class LoginView: UIView {
         
         emailTextField.styleTextField()
         emailTextField.placeholder = "email"
+        emailTextField.textColor = UIColor.black
         stackView.addSubview(emailTextField)
         
         passwodTextField.styleTextField()
         passwodTextField.placeholder = "password"
+        passwodTextField.textColor = UIColor.black
         stackView.addSubview(passwodTextField)
         
         loginButton.styleFilledButton()
@@ -103,5 +108,11 @@ class LoginView: UIView {
     @objc func signUpTapped() {
         onSignUpTapped?()
     }
-    
+}
+
+extension LoginView: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }

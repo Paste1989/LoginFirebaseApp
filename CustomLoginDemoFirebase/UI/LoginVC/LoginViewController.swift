@@ -29,8 +29,13 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         addCallbacks()
         
+        //SPM lib
         let spm = SPM()
         spm.printSomething(word: "Saša")
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = true
     }
     
     private func addCallbacks() {

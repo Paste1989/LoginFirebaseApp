@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests/Pods-CustomLoginDemoFirebase-CustomLoginDemoFirebaseUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/SPM/SPM.framework
 ${BUILT_PRODUCTS_DIR}/sasaLib/sasaLib.framework

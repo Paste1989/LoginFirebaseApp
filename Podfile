@@ -10,6 +10,7 @@ target 'CustomLoginDemoFirebase' do
   # Pods for CustomLoginDemoFirebase
 
 pod 'sasaLib', :git => "https://github.com/Paste1989/sasaLib.git"
+pod 'SPM', :git => "https://github.com/Paste1989/SPM.git"
 
   target 'CustomLoginDemoFirebaseTests' do
     inherit! :search_paths

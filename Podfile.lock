@@ -1,21 +1,29 @@
 PODS:
   - sasaLib (0.1.1)
+  - SPM (0.1.1)
 
 DEPENDENCIES:
   - sasaLib (from `https://github.com/Paste1989/sasaLib.git`)
+  - SPM (from `https://github.com/Paste1989/SPM.git`)
 
 EXTERNAL SOURCES:
   sasaLib:
     :git: https://github.com/Paste1989/sasaLib.git
+  SPM:
+    :git: https://github.com/Paste1989/SPM.git
 
 CHECKOUT OPTIONS:
   sasaLib:
     :commit: 249052882de0f56f3baeb3c89f880c8c78a898b7
     :git: https://github.com/Paste1989/sasaLib.git
+  SPM:
+    :commit: 36180d97d363598568624047d91ee3e972ca6f4b
+    :git: https://github.com/Paste1989/SPM.git
 
 SPEC CHECKSUMS:
   sasaLib: 5aa18e688f8ab95ba6d128d44ec151196a272127
+  SPM: 8c5f3d612e37b45c028a178cced26efe87f9b3f7
 
-PODFILE CHECKSUM: 6fc354159c491a464fcf588e179d6d46b2057733
+PODFILE CHECKSUM: 1182f219a70e7df504e85f60e4aa65d61cf495d9
 
 COCOAPODS: 1.11.2

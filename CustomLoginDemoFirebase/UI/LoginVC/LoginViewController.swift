@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import SPM
 
 class LoginViewController: UIViewController {
     private lazy var loginView = LoginView()
@@ -27,6 +28,9 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         addCallbacks()
+        
+        let spm = SPM()
+        spm.printSomething(word: "Saša")
     }
     
     private func addCallbacks() {
